@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import LandingPage from "./components/LandingPage.jsx/LandingPage";
+import Calendar from "./components/calendar/Calendar";
+import SelectInput from "./components/commun/SelectInput";
+import TeleInput from "./components/commun/TeleInput";
+import TextInput from "./components/commun/TextInput";
+import Login from "./components/login/Login";
+import NavBar from "./components/navbar/NavBar";
+import WorkshopsFormsStepper from "./components/workshopes/WorkshopsFormsStepper";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <LandingPage />;
 }
 
 export default App;

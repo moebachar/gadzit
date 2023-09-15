@@ -1,0 +1,46 @@
+$font-size-base: 33px;
+$font-weight-base: 700;
+
+.button2 {
+  background-color: #000;
+  outline: none;
+  border: none;
+  border-radius: 15%;
+  font-family: "DM Sans";
+  font-size: $font-size-base;
+  padding: 3% 5%;
+  font-weight: $font-weight-base;
+  color: #fff;
+  cursor: pointer;
+  width: fit-content;
+
+  @media (max-width: 1920px) {
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+  }
+
+  @media (max-width: 1680px) {
+    font-size: $font-size-base * 0.8;
+    font-weight: $font-weight-base;
+  }
+
+  @media (max-width: 1440px) {
+    font-size: $font-size-base * 0.7;
+    font-weight: $font-weight-base;
+  }
+
+  @media (max-width: 1280px) {
+    font-size: $font-size-base * 0.6;
+    font-weight: $font-weight-base;
+  }
+
+  @media (max-width: 780px) {
+    font-size: $font-size-base * 0.5;
+    font-weight: $font-weight-base - 100; // Adjust font weight as needed
+  }
+
+  @media (max-width: 550px) {
+    font-size: $font-size-base * 0.4;
+    font-weight: $font-weight-base - 200; // Adjust font weight as needed
+  }
+}

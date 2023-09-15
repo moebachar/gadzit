@@ -1,0 +1,109 @@
+@import url("https://fonts.cdnfonts.com/css/sharp-sans");
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(30, 30, 30),
+    rgba(30, 30, 30, 0)
+  );
+  z-index: 2;
+}
+body {
+  header {
+    background-image: linear-gradient(to bottom, inherit, #1e1e1e00);
+    z-index: 2;
+    min-height: 120px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem;
+    height: 4rem;
+    #club-logo {
+      height: 3rem;
+      width: auto;
+    }
+    .nav-links {
+      display: flex;
+      margin-right: 2rem;
+      list-style: none;
+      gap: 2rem;
+      a {
+        text-decoration: none;
+        color: inherit;
+        padding-bottom: 2px;
+      }
+
+      #active {
+        border-bottom: 2px solid #fff;
+      }
+    }
+    #user-logo {
+      height: 2.3rem;
+      width: auto;
+    }
+    .menu-logo-container {
+      display: none;
+      #menu-log {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      #club-logo {
+        height: 3rem;
+        width: auto;
+      }
+      .nav-links {
+        display: none;
+        a {
+          display: none;
+        }
+      }
+      .user-logo-container {
+        display: none;
+        #user-logo {
+          display: none;
+        }
+      }
+      .menu-logo-container {
+        display: inline;
+        margin-left: auto;
+        #menu-logo {
+          display: inline;
+          height: 2.5rem;
+          width: auto;
+        }
+      }
+    }
+    .sidebar-container {
+      background-color: black;
+      display: none;
+      position: absolute;
+      right: 0.7rem;
+      .sidebar-links {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        #user-logo2 {
+          height: 2.3rem;
+          width: auto;
+        }
+      }
+    }
+  }
+}

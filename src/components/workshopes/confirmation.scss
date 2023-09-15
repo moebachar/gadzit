@@ -1,0 +1,22 @@
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 1%;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 5%;
+
+  & div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__pack {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    & img {
+      width: 10%;
+    }
+  }
+}

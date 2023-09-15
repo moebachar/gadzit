@@ -1,0 +1,92 @@
+.user-info {
+  position: relative;
+}
+
+.user-info input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.user-info label {
+  font-family: "Inter", sans-serif;
+  width: 353px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 30px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+}
+
+.user-info input:focus ~ label,
+.user-info input:valid ~ label {
+  top: -40px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 120%;
+}
+
+@media (max-width: 1680px) {
+  .user-info label {
+    font-size: 26px;
+    padding: 8px 0;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 1440px) {
+  .user-info input {
+    padding: 8px 0;
+    font-size: 26px;
+  }
+  .user-info label {
+    font-size: 24px;
+    padding: 6px 0;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 1280px) {
+  .user-info input {
+    padding: 6px 0;
+    font-size: 22px;
+  }
+  .user-info label {
+    font-size: 22px;
+    padding: 5px 0;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 780px) {
+  .user-info input {
+    padding: 4px 0;
+    font-size: 18px;
+  }
+  .user-info label {
+    font-size: 18px;
+    padding: 4px 0;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 550px) {
+  .user-info input {
+    padding: 3px 0;
+    font-size: 16px;
+  }
+  .user-info label {
+    font-size: 16px;
+    padding: 3px 0;
+    font-weight: 500;
+  }
+}

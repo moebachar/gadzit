@@ -1,0 +1,111 @@
+.shipe {
+  max-width: 100%;
+  display: flex;
+  padding: 0px 16px;
+  align-items: flex-start;
+  border-radius: 21px;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Prevent line breaks within the content */
+  overflow: hidden;
+  height: fit-content;
+
+  & span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 0;
+    overflow: hidden;
+    color: #fff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 160% */
+    max-width: 100%;
+  }
+}
+
+#meeting {
+  background: rgba(18, 153, 229, 0.29);
+}
+
+#competition {
+  background: rgba(13, 238, 76, 0.24);
+}
+
+#event {
+  background: rgba(130, 78, 241, 0.29);
+}
+
+#course {
+  background: rgba(241, 200, 78, 0.29);
+}
+
+#other {
+  background: rgba(14, 14, 34, 0.29);
+}
+@media (max-width: 1920px) {
+  .shipe {
+    padding: 0px 12px;
+    border-radius: 18px;
+  }
+
+  .shipe span {
+    font-size: 18px;
+    line-height: 28px; /* 157.778% */
+  }
+}
+
+/* Media Query for screen width 1680px and below */
+@media (max-width: 1680px) {
+  .shipe {
+    padding: 0px 10px;
+    border-radius: 15px;
+  }
+
+  .shipe span {
+    font-size: 16px;
+    line-height: 26px; /* 162.5% */
+  }
+}
+
+/* Media Query for screen width 1440px and below */
+@media (max-width: 1440px) {
+  .shipe {
+    padding: 0px 8px;
+    border-radius: 12px;
+  }
+
+  .shipe span {
+    font-size: 14px;
+    line-height: 24px; /* 171.429% */
+  }
+}
+
+/* Media Query for screen width 1280px and below */
+@media (max-width: 1280px) {
+  .shipe {
+    padding: 0px 6px;
+    border-radius: 9px;
+  }
+
+  .shipe span {
+    font-size: 12px;
+    line-height: 22px; /* 183.333% */
+  }
+}
+
+/* Media Query for screen width 780px and below */
+@media (max-width: 780px) {
+  .shipe {
+    padding: 0px 4px;
+    border-radius: 6px;
+  }
+
+  .shipe span {
+    font-size: 10px;
+    line-height: 20px; /* 200% */
+  }
+}

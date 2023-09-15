@@ -1,0 +1,117 @@
+.wfieldset {
+  margin: 60px auto;
+  position: relative;
+  border: 2px white solid;
+  max-width: 1920px;
+}
+
+.title {
+  font-size: 50px; /* Updated font size */
+  color: white;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-row img {
+  width: 10%;
+  flex-direction: row;
+  margin: 5%;
+}
+
+.apply-btn {
+  width: 15%;
+  height: 20%;
+  color: white;
+  background: black;
+  font-size: 50px; /* Updated font size */
+  text-align: center;
+  border: solid 2px white;
+  border-radius: 50px;
+  position: absolute;
+  top: 92%;
+  right: 43%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background-color: rgb(167, 167, 167);
+}
+
+@media (max-width: 1920px) {
+  .apply-btn {
+    top: 92%;
+    right: 43%;
+  }
+}
+
+@media (max-width: 1680px) {
+  .apply-btn {
+    top: 92%;
+    right: 43%;
+    font-size: 40px;
+  }
+  .title {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .apply-btn {
+    top: 92%;
+    right: 43%;
+    font-size: 35px;
+  }
+  .title {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .apply-btn {
+    top: 92%;
+    right: 43%;
+    font-size: 24px;
+  }
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 780px) {
+  .apply-btn {
+    top: 92%;
+    right: 43%;
+    font-size: 20px;
+  }
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .apply-btn {
+    top: 92%;
+    right: 43%;
+    font-size: 12px;
+  }
+  .title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .apply-btn {
+    top: 92%;
+    right: 43%;
+    font-size: 8px;
+  }
+  .title {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 780px) {
+  .ill-img {
+    display: none;
+  }
+  form {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+    display: "flex";
+    justify-content: "center";
+    align-items: "center";
+    padding: "3%";
+  }
+}

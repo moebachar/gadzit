@@ -1,0 +1,15 @@
+.simple {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .vertical {
+    display: none;
+  }
+  .simple {
+    display: block;
+  }
+  .container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,160 @@
+.member {
+  margin: 15% 0 auto; // Add a 50px margin top to the "member" div
+  border: 2px solid white; // Apply a grey border to the "member" div
+  padding: 10%; // Add padding to create some space for the image
+  max-width: 1920px;
+  font-family: "Inter";
+
+  &__image {
+    width: 25%;
+    margin-top: -20%;
+    margin-left: -17%;
+    z-index: 1; // Place the image above the border on the z-axis
+    border-radius: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &__intro {
+      display: flex;
+      justify-content: space-between;
+      font-size: 40px;
+
+      &__name {
+        color: #f1baba;
+        border-width: 0 0 1px 0;
+        border-style: solid;
+      }
+    }
+
+    &__description {
+      font-size: 28px;
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+
+      &__media {
+        display: flex;
+        justify-content: space-between;
+        font-size: 28px;
+        gap: 10px;
+
+        & a {
+          & svg {
+            font-size: 60px;
+          }
+        }
+      }
+
+      &__controle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .member__content__intro {
+    font-size: 36px; /* Adjust font size for 1680px */
+  }
+  .member__content__description {
+    font-size: 32px; /* Adjust font size for 1680px */
+  }
+
+  .member__content__footer__media {
+    & a {
+      & svg {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .member__content__intro {
+    font-size: 32px; /* Adjust font size for 1440px */
+  }
+  .member__content__description {
+    font-size: 28px; /* Adjust font size for 1440px */
+  }
+
+  .member__content__footer__media {
+    & a {
+      & svg {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .member__content__intro {
+    font-size: 28px; /* Adjust font size for 1280px */
+  }
+  .member__content__description {
+    font-size: 24px; /* Adjust font size for 1280px */
+  }
+
+  .member__content__footer__media {
+    & a {
+      & svg {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .member {
+    margin-top: 150px;
+    &__image {
+      width: 35%;
+      margin-top: -30%;
+      margin-left: 30%;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+
+      &__intro {
+        margin-top: 20px;
+        font-size: 24px;
+      }
+
+      &__description {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .member {
+    &__content {
+      &__intro {
+        font-size: 20px;
+      }
+
+      &__description {
+        font-size: 16px;
+      }
+
+      &__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+}

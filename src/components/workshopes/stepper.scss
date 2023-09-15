@@ -1,0 +1,12 @@
+.vertical-box {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .vertical-box {
+    display: block;
+  }
+  .horizontal-box {
+    display: none;
+  }
+}

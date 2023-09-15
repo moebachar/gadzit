@@ -1,0 +1,114 @@
+.event-card {
+  display: flex;
+  padding: 5%;
+  padding-bottom: 3%;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  background: #222;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+
+  &__user-image {
+    width: 15%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    &__title {
+      align-self: stretch;
+      color: #fff;
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin: 0;
+    }
+
+    &__date {
+      display: flex;
+      gap: 5px;
+
+      & span {
+        align-self: stretch;
+        color: rgba(255, 255, 255, 0.8);
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 133.333% */
+      }
+    }
+
+    &__description {
+      color: rgba(255, 255, 255, 0.8);
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__writer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 5px;
+
+        & img {
+          width: 17%;
+        }
+
+        & span {
+          align-self: stretch;
+          color: rgba(255, 255, 255, 0.8);
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px; /* 133.333% */
+        }
+      }
+    }
+    @media (max-width: 480px) {
+      /* Adjust font-size and font-weight for smaller widths */
+      &__title {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      &__description {
+        font-size: 14px;
+      }
+      &__date span,
+      &__footer__writer span {
+        font-size: 10px;
+      }
+    }
+
+    @media (max-width: 376px) {
+      /* Further adjustments for even smaller widths */
+      &__title {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      &__description {
+        font-size: 12px;
+      }
+      &__date span,
+      &__footer__writer span {
+        font-size: 8px;
+      }
+    }
+  }
+}
